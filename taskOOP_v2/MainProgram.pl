@@ -8,4 +8,25 @@ use lib "/home/fatihkilic/workspace/taskOOP/taskOOP_v2";
 use DataController;
 no lib "/home/fatihkilic/workspace/taskOOP/taskOOP_v2";
 
-RunPeopleDataController();
+#RunPeopleDataController();
+
+while (1)
+	{
+		print "Menu\n";
+		print "1 - Work with PEOPLE Database!\n";
+		print "2 - Work with ANIMAL Database!\n";
+		print "Type the number OR Press Enter to QUIT: ";
+		my $i_entry = <STDIN>;
+		chomp $i_entry;
+		print "\n";
+        	
+		last if ($i_entry eq "");
+
+		do { RunPeopleDataController(); } if ($i_entry == 1);
+
+		do { RunAnimalDataController(); } if ($i_entry == 2);
+
+		# do { ..... ; } if ($i_entry == 3);
+ 
+	}
+

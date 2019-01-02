@@ -1,8 +1,8 @@
 use JSON;
 
-sub writetoJSONfile()
+sub writepeopletoJSONfile()
 {
-	my %h_people = readdatabase();
+	my %h_people = readpeopledatabase();
 	
 	my $s_json = encode_json \%h_people;
 

@@ -3,7 +3,7 @@ use AddData;
 use DeleteData;
 use PrintData;
 use ReadData;
-use SearchPerson;
+use SearchData;
 use ShowData;
 use UpdateData;
 use WriteData;
@@ -23,14 +23,15 @@ sub RunPeopleDataController
 		print "Type the number OR Press Enter to QUIT: ";
 		my $i_entry = <STDIN>;
 		chomp $i_entry;
-		
+		print "\n";
+
 		last if ($i_entry eq "");
 
-		do { showdatabase(); } if ($i_entry == 1);
+		do { showpeopledatabase(); } if ($i_entry == 1);		#ShowData.pm
 
-		do { addperson(); } if ($i_entry == 2);
+		do { addperson(); } if ($i_entry == 2);					#AddData.pm
 
-		do { searchpeople(); } if ($i_entry == 3);
+		do { searchpeople(); } if ($i_entry == 3);				#SearchData.pm
  
 		do 
 		{ 
@@ -44,19 +45,71 @@ sub RunPeopleDataController
 			else 
 			{
 				if ($s_entry eq "update")
-					{ updatepersondata(); }
+					{ updatepersondata(); }			#UpdateData.pm
 				else 
 					{
 					if ($s_entry eq "delete")
-        					{ deletepersondata(); }
+        					{ deletepersondata(); }		#DeleteData.pm
 					}
 			}
 		} if ($i_entry == 4);
 
 
-		do { writetoJSONfile(); } if ($i_entry == 5);
+		do { writepeopletoJSONfile(); } if ($i_entry == 5);		#WriteToJSON.pm
 
 	}
+}
+
+
+sub RunAnimalDataController
+{
+	while (1)
+		{
+			print "Menu\n";
+			print "1 - Show Animals!\n";
+			print "2 - Add an animal!\n";
+			print "3 - Search for an animal!\n";
+			print "4 - Delete or Update an animal's data!\n";
+			print "5 - Save animal data as a JSON file!\n";
+			print "Type the number OR Press Enter to QUIT: ";
+			my $i_entry = <STDIN>;
+			chomp $i_entry;
+			print "\n";
+			
+			last if ($i_entry eq "");
+
+			do { showdatabase(); } if ($i_entry == 1);
+
+=begin comment NEXT TASK			
+			do { addanimal(); } if ($i_entry == 2);
+
+			do { searchanimal(); } if ($i_entry == 3);
+	
+			do 
+			{ 
+				print "- Do you want to delete an animal from database?\n";
+				print "- Do you want to update an animal's data?\n";
+				print "Type 'delete' or 'update' or Press Enter to QUIT: ";
+				my $s_entry = <STDIN>;
+				chomp $s_entry; 
+				if ($s_entry eq "")
+						{die;}
+				else 
+				{
+					if ($s_entry eq "update")
+						{ updatepersondata(); }
+					else 
+						{
+						if ($s_entry eq "delete")
+								{ deletepersondata(); }
+						}
+				}
+			} if ($i_entry == 4);
+
+
+			do { writetoJSONfile(); } if ($i_entry == 5);
+=cut
+		}
 }
 1;
 

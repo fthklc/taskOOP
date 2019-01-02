@@ -1,6 +1,6 @@
 sub deletepersondata()
 {
-	my %h_people = readdatabase();
+	my %h_people = readpeopledatabase();		#ReadData.pm
 	#my @l_people = %h_people;
 	
 	print "Please enter the <<unix timestamp>> of the user who you want to delete from database!\n";
@@ -18,8 +18,8 @@ sub deletepersondata()
 	}
 	
 	@l_people = %h_people;
-	printhashdata(@l_people);
-	writedatabase(@l_people);
+	printpeoplehashdata(@l_people);		#PrintData.pm
+	writepeopledatabase(@l_people);		#WriteData.pm
 }
 1;
 

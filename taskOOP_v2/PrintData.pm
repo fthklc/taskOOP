@@ -1,4 +1,4 @@
-sub printhashdata
+sub printpeoplehashdata
 {        
         my %h_people = @_;
 	

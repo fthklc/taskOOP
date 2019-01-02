@@ -1,4 +1,4 @@
-sub readdatabase()
+sub readpeopledatabase()
 {
 	my %h_people;	
 	my $s_filename = 'people.txt';

@@ -1,10 +1,10 @@
-sub showdatabase()
+sub showpeopledatabase()
 {        
-    my %h_people = readdatabase();
+    my %h_people = readpeopledatabase();		#ReadData.pm
 	
 	my @l_people = %h_people;
 
-	printhashdata(@l_people);
+	printpeoplehashdata(@l_people);				#PrintData.pm
 }
 
 1;

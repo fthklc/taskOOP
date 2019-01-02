@@ -1,6 +1,6 @@
 sub searchpeople()
 {
-	my %h_people = readdatabase();
+	my %h_people = readpeopledatabase();        #ReadData.pm
 	my %h_search;
 	my @l_search;
 
@@ -21,7 +21,7 @@ sub searchpeople()
 
 	@l_search = %h_search;
 
-	printhashdata(@l_search);	
+	printpeoplehashdata(@l_search);	        #PrintData.pm
 }
 1;
 

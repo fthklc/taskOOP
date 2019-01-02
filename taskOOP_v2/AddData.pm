@@ -1,6 +1,6 @@
 sub addperson()
 {
-	my %h_people = readdatabase();
+	my %h_people = readpeopledatabase();        #ReadData.pm
 
 	my $i_unixID = mktime (localtime());
         
@@ -24,7 +24,7 @@ sub addperson()
         };
 	
 	my @l_people = %h_people;
-	writedatabase(@l_people);
+	writepeopledatabase(@l_people);     #WriteData.pm
 }
 1;
 

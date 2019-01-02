@@ -1,6 +1,6 @@
 sub updatepersondata()
 {
-	my %h_people = readdatabase();
+	my %h_people = readpeopledatabase();		#ReadData.pm
 
 	print "Please enter the Unix timestamp of the user\n";
 	print ("Unix timestamp: ");
@@ -31,6 +31,6 @@ sub updatepersondata()
 	}
 	
 	my @l_people = %h_people;
-	writedatabase(@l_people);
+	writepeopledatabase(@l_people);		#WriteData.pm
 }
 1;

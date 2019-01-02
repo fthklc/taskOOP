@@ -1,4 +1,4 @@
-sub writedatabase()
+sub writepeopledatabase()
 {
 	my %h_people = @_;
 	my $s_filename = 'people.txt';
