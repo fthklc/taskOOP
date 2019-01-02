@@ -78,12 +78,20 @@ sub RunAnimalDataController
 			
 			last if ($i_entry eq "");
 
+<<<<<<< HEAD
 			do { showanimaldatabase(); } if ($i_entry == 1);
 
 			
 			do { addanimal(); } if ($i_entry == 2);
 
 
+=======
+			do { showdatabase(); } if ($i_entry == 1);
+
+=begin comment NEXT TASK			
+			do { addanimal(); } if ($i_entry == 2);
+
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 			do { searchanimal(); } if ($i_entry == 3);
 	
 			do 
@@ -98,18 +106,31 @@ sub RunAnimalDataController
 				else 
 				{
 					if ($s_entry eq "update")
+<<<<<<< HEAD
 						{ updateanimaldata(); }
 					else 
 						{
 						if ($s_entry eq "delete")
 								{ deleteanimaldata(); }
+=======
+						{ updatepersondata(); }
+					else 
+						{
+						if ($s_entry eq "delete")
+								{ deletepersondata(); }
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 						}
 				}
 			} if ($i_entry == 4);
 
 
+<<<<<<< HEAD
 			do { writeanimaltoJSONfile(); } if ($i_entry == 5);
 
+=======
+			do { writetoJSONfile(); } if ($i_entry == 5);
+=cut
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 		}
 }
 1;

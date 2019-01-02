@@ -3,14 +3,23 @@ Previous completed tasks:
    	2 - Add a person to database 
     	3 - Search a person in database using "Surname"    
     	4 - Delete or Update a person in database using "Unix timestamp"
+<<<<<<< HEAD
     	5 - Save people data as a people_data.json file 
+=======
+    	5 - Save people data as a json file 
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 
 I completed the tasks below:
 	6 - Show Animals in the database / text file
 	7 - Add an Animal into database
+<<<<<<< HEAD
 	8 - Search for an Animal in database using "Name"
 	9 - Delete or Update an Animal data in database using "Unix timestamp"
 	10 - Save animal data as a animal_data.json file 
+=======
+	8 - Search for an Animal
+	9 - Delete an Animal
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 
 
 
@@ -18,6 +27,10 @@ I completed the tasks below:
 -	Main program	=	use PersonDataController > use DataController	
 -	PersonDataController file name was changed to DataController.pm
 -	Path was changed for modules
+<<<<<<< HEAD
 -	...
+=======
+-	
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 
 

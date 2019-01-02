@@ -21,6 +21,7 @@ sub deletepersondata()
 	printpeoplehashdata(@l_people);		#PrintData.pm
 	writepeopledatabase(@l_people);		#WriteData.pm
 }
+<<<<<<< HEAD
 
 sub deleteanimaldata()
 {
@@ -44,6 +45,8 @@ sub deleteanimaldata()
 	writeanimaldatabase(@l_animal);		#WriteData.pm
 }
 
+=======
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 1;
 
 

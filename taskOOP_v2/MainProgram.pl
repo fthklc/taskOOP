@@ -4,9 +4,15 @@ use strict;
 use warnings;
 use POSIX;
 
+<<<<<<< HEAD
 use lib "/home/fatihk/Desktop/taskOOP/taskOOP-master/taskOOP_v2"; #/home/fatihkilic/workspace/taskOOP/taskOOP_v2
 use DataController;
 no lib "/home/fatihk/Desktop/taskOOP/taskOOP-master/taskOOP_v2";
+=======
+use lib "/home/fatihkilic/workspace/taskOOP/taskOOP_v2";
+use DataController;
+no lib "/home/fatihkilic/workspace/taskOOP/taskOOP_v2";
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 
 #RunPeopleDataController();
 

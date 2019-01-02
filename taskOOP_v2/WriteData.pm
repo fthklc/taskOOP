@@ -14,6 +14,7 @@ sub writepeopledatabase()
         }
         close $filehandler; 
 }
+<<<<<<< HEAD
 
 sub writeanimaldatabase()
 {
@@ -33,5 +34,7 @@ sub writeanimaldatabase()
         close $filehandler; 	
 }
 
+=======
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 1;
 

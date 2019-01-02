@@ -23,6 +23,7 @@ sub searchpeople()
 
 	printpeoplehashdata(@l_search);	        #PrintData.pm
 }
+<<<<<<< HEAD
 
 sub searchanimal()
 {
@@ -51,5 +52,7 @@ sub searchanimal()
 	printanimalhashdata(@l_search);	        #PrintData.pm
 }
 
+=======
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 1;
 

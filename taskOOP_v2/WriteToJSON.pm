@@ -12,6 +12,7 @@ sub writepeopletoJSONfile()
 		print $filehandler encode_json($s_json);
 	close $filehandler;
 
+<<<<<<< HEAD
 	print "People data was saved into people_data.json file.\n";
 
 }
@@ -36,6 +37,15 @@ sub writeanimaltoJSONfile()
 
 
 =begin comment AN EXAMPLE FOR JSON FILE READ AND WRITE
+=======
+	print "Data was saved into people_data.json file.\n";
+
+}
+1;
+
+=begin comment EXAMPLE
+
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 use JSON;
 
 sub read_from_file {

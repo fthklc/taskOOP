@@ -26,6 +26,7 @@ sub addperson()
 	my @l_people = %h_people;
 	writepeopledatabase(@l_people);     #WriteData.pm
 }
+<<<<<<< HEAD
 
 sub addanimal()
 {
@@ -63,5 +64,7 @@ sub addanimal()
 
 }
 
+=======
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 1;
 

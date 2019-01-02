@@ -7,6 +7,7 @@ sub showpeopledatabase()
 	printpeoplehashdata(@l_people);				#PrintData.pm
 }
 
+<<<<<<< HEAD
 sub showanimaldatabase()
 {
 	my %h_animal = readanimaldatabase();
@@ -17,5 +18,7 @@ sub showanimaldatabase()
 
 }
 
+=======
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 1;
 

@@ -29,6 +29,7 @@ sub updatepersondata()
 			print "The person with $s_unixID unix timestamp, $s_name $s_surname data was updated!\n";
                 }
 	}
+<<<<<<< HEAD
 	my @l_people = %h_people;
 	writepeopledatabase(@l_people);		#WriteData.pm
 }
@@ -75,4 +76,10 @@ sub updateanimaldata()
 
 }
 
+=======
+	
+	my @l_people = %h_people;
+	writepeopledatabase(@l_people);		#WriteData.pm
+}
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 1;

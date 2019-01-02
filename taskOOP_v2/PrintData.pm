@@ -1,6 +1,10 @@
 sub printpeoplehashdata
 {        
+<<<<<<< HEAD
     my %h_people = @_;
+=======
+        my %h_people = @_;
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 	
 	print "-" x 48, "PEOPLE IN DATABASE", "-" x 48, "\n" ;
 	print "Unix timestamp\t\t\t", "Name\t\t\t", "Surname\t\t\t", "Birthday", "\n";
@@ -16,6 +20,7 @@ sub printpeoplehashdata
 	print "-------PRINT COMPLETED-------\n\n";
 }
 
+<<<<<<< HEAD
 sub printanimalhashdata
 {
     my %h_animal = @_;
@@ -35,5 +40,7 @@ sub printanimalhashdata
 	print "-------PRINT COMPLETED-------\n\n";
 }
 
+=======
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 1;
 

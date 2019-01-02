@@ -18,6 +18,7 @@ sub readpeopledatabase()
 	close $filehandler;
 	return %h_people;
 }
+<<<<<<< HEAD
 
 sub readanimaldatabase()
 {
@@ -41,4 +42,6 @@ sub readanimaldatabase()
 	return %h_animal;
 }
 
+=======
+>>>>>>> f5831f63ea94e69381da1e6f2686fb3e3dd68961
 1;
