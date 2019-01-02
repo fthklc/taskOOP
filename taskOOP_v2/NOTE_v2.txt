@@ -1,0 +1,22 @@
+Previous completed tasks:
+	1 - Show database (txt file)
+   	2 - Add a person to database 
+    	3 - Search a person in database using "Surname"    
+    	4 - Delete or Update a person in database using "Unix timestamp"
+    	5 - Save people data as a json file 
+
+I completed the tasks below:
+	6 - Show Animals in the database / text file
+	7 - Add an Animal into database
+	8 - Search for an Animal
+	9 - Delete an Animal
+
+
+
+=========CHANGES=========
+-	Main program	=	use PersonDataController > use DataController	
+-	PersonDataController file name was changed to DataController.pm
+-	Path was changed for modules
+-	
+
+
